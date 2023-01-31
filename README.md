@@ -3,4 +3,4 @@
 
 # Welcome to Camunda Issues 
 
-In this repository you can get an overview of key features we are currently working on (or planning to work on in the near future). Please don't hesitate to comment any questions for feedback you have directly on the respective issues.
+In this repository you can get an overview of key features we are currently working on (or planning to work on in the near future). Please don't hesitate to comment any questions or feedback you have directly on the respective issues.
