@@ -3,7 +3,7 @@ name: Documentation Issue
 about: Changes to the documentation.
 title: ''
 labels: ''
-assignees: ''
+assignees: quentinleroy
 
 ---
 
