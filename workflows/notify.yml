@@ -1,5 +1,4 @@
-- name: Notify of Incoming Issues and Comments
-  id: slack
+- name: slack-send
   uses: slackapi/slack-github-action@v1.24.0
   with:
     # For posting a rich message using Block Kit
