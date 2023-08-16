@@ -1,0 +1,18 @@
+on: push
+name: Slack Notification Demo
+jobs:
+  slackNotification:
+    name: Slack Notification
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: Slack Notification
+      uses: rtCamp/action-slack-notify@v2
+      env:
+        SLACK_CHANNEL: bot-github-public
+        SLACK_ICON: https://camunda.com/wp-content/uploads/2020/12/Camunda-workflow-engine-gradient.png?size=48
+        SLACK_MSG_AUTHOR: $GITHUB_ACTOR
+        SLACK_MESSAGE: 'Post Content :rocket:'
+        SLACK_TITLE: Post Title
+        SLACK_USERNAME: GithubPublic
+        SLACK_WEBHOOK: T0PM0P1SA/B05NQN9C29E/PPieDLKQ7AAbcJQEBLV6XnJG
