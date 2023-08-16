@@ -1,5 +1,6 @@
 - name: slack-send
   uses: slackapi/slack-github-action@v1.24.0
+  id: slack
   with:
     # For posting a rich message using Block Kit
     channel-id: bot-github-public
