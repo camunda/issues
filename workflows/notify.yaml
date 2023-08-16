@@ -3,6 +3,7 @@
   uses: slackapi/slack-github-action@v1.24.0
   with:
     # For posting a rich message using Block Kit
+    channel-id: bot-github-public
     payload: |
       {
         "text": "GitHub Camunda Issue: ${{ github.event.issue.html_url || github.event.head_issue.url }}",
@@ -19,3 +20,4 @@
   env:
     SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK }}
     SLACK_WEBHOOK_TYPE: INCOMING_WEBHOOK
+    
