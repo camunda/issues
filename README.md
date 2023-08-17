@@ -5,9 +5,11 @@
 
 ❇️ View the official [Camunda public product roadmap](https://github.com/orgs/camunda/projects/57).
 
-Our product roadmap is where you can learn about what features we're working on, what stage they're in, and when we expect to bring them to you. Have any questions or comments about items on the roadmap? Share your feedback by leaving a comment on the issue you are interested in.
+The `camunda/issues` repository has two purposes:
 
-The issues repository is for communicating Camunda’s roadmap. If you have feedback about the issues repository itself, such as how the issues are presented, let us know through general feedback using the appropriate GitHub issues template.
+1. Communicating our [product roadmap](https://github.com/orgs/camunda/projects/57): this is where you can learn about what features we're working on, what stage they're in, and when we expect to bring them to you. Have any questions or comments about items on the roadmap? Share your feedback by leaving a comment on the issue you are interested in.
+
+2. Giving you a voice: If you have a bug to report or a suggestion to propose, then (a) visit the respective component repository listed below and open an issue there or (b) if there is no public repository, open the issue here.
 
 ## Guide to the roadmap
 Every item on the roadmap is [an issue](https://github.com/camunda/issues/issues), with a `label` that indicates each of the following:
