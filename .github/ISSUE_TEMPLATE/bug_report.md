@@ -14,11 +14,7 @@ assignees: quentinleroy
 **To Reproduce**
 
 <!--
-Steps to reproduce the behavior
-
-If possible add a minimal reproducer code sample
-- when using the Java client: https://github.com/zeebe-io/zeebe-test-template-java
-
+Steps to reproduce the behavior. Can be code or UI steps.
 -->
 
 **Expected behavior**
@@ -27,7 +23,7 @@ If possible add a minimal reproducer code sample
 
 **Log/Stacktrace**
 
-<!-- If possible add the full stacktrace or Zeebe log which contains the issue. -->
+<!-- If possible add the full stacktrace or log which contains the issue. -->
 
 <details><summary>Full Stacktrace</summary>
  <p>
