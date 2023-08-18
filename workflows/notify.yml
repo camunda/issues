@@ -1,4 +1,7 @@
-- name: slack-send
+on:
+  issues:
+    types: [opened]
+  name: slack-send
   uses: slackapi/slack-github-action@v1.24.0
   id: slack
   with:
