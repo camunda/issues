@@ -1,23 +1,31 @@
-- name: slack-send
-  uses: slackapi/slack-github-action@v1.24.0
-  id: slack
-  with:
-    # For posting a rich message using Block Kit
-    channel-id: bot-github-public
-    payload: |
-      {
-        "text": "GitHub Camunda Issue: ${{ github.event.issue.html_url || github.event.head_issue.url }}",
-        "blocks": [
-          {
-            "type": "section",
-            "text": {
-              "type": "mrkdwn",
-              "text": "GitHub Camunda Issue: ${{ github.event.issue.html_url || github.event.head_issue.url }}"
+name: IssueOpened
+
+on:
+      issues:
+      types: [opened]
+
+  notify-when-issue-opened:
+    name: Send slack notification when an issue is opened
+    runs-on: ubuntu-latest
+    steps:
+      - id: slack-notify
+        name: Send slack notification
+        uses: slackapi/slack-github-action@v1.24.0
+        with:
+          # For posting a rich message using Block Kit
+          payload: |
+            {
+              "text": "A new Camunda Issue was created in https://github.com/camunda/issues/",
+              "blocks": [
+                {
+                  "type": "section",
+                  "text": {
+                    "type": "mrkdwn",
+                    "text": "A new Camunda Issue was created in https://github.com/camunda/issues/"
+                  }
+                }
+              ]
             }
-          }
-        ]
-      }
-  env:
-    SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK }}
-    SLACK_WEBHOOK_TYPE: INCOMING_WEBHOOK
-    
+        env:
+          SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
+          SLACK_WEBHOOK_TYPE: INCOMING_WEBHOOK
