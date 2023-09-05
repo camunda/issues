@@ -7,9 +7,9 @@
 
 The `camunda/issues` repository has two purposes:
 
-1. Communicating our [product roadmap](https://github.com/orgs/camunda/projects/57): this is where you can learn about what features we're working on, what stage they're in, and when we expect to bring them to you. Have any questions or comments about items on the roadmap? Share your feedback by leaving a comment on the issue you are interested in.
+1. **Communicating our [product roadmap](https://github.com/orgs/camunda/projects/57)**: this is where you can learn about what features we're working on, what stage they're in, and when we expect to bring them to you. Have any questions or comments about items on the roadmap? Share your feedback by leaving a comment on the issue you are interested in.
 
-2. Giving you a voice: If you have a bug to report or a suggestion to propose, then (a) visit the respective [component repository](https://github.com/camunda/issues#public-product-components) listed below and open an issue there or (b) if there is no public repository, [open the issue here](https://github.com/camunda/issues/issues/new/choose).
+2. **Giving you a voice**: If you have a bug to report or a suggestion to propose, then (a) visit the respective [component repository](https://github.com/camunda/issues#public-product-components) listed below and open an issue there or (b) if there is no public repository, [open the issue here](https://github.com/camunda/issues/issues/new/choose).
 
 ## Guide to the roadmap
 Every item on the roadmap is [an issue](https://github.com/camunda/issues/issues), with a `label` that indicates each of the following:
@@ -18,9 +18,9 @@ Every item on the roadmap is [an issue](https://github.com/camunda/issues/issues
 
 - A `potential release version`, which is set during the research phase as high-level planning. The potential release version is subject to change as we refine the scope of the implementation.
 
-- A `target release version`, indicating the version of the product in which we plan to deliver the feature. Camunda has minor releases twice a year, and alpha releases on a monthly basis. Once we know what version we are delivering a feature, we will update the issue to indicate that information. See our [release policy](https://camunda.com/release-policy/) for more information.
+- `target:xyz`: this label indicates the version of the product in which we plan to deliver the feature. Camunda has minor releases twice a year, and alpha releases on a monthly basis. Once we know what version we are delivering a feature, we will update the issue to indicate that information. See our [release policy](https://camunda.com/release-policy/) for more information.
 
-- Once a feature is delivered, the `version label` will be applied to the roadmap issue and the issue status will indicate if the feature was delivered in an alpha or minor version.
+- `version:xyz`: once an epic is delivered, this label will be applied to the roadmap issue and the issue status will indicate if the feature was delivered in an alpha or minor version.
 
 Some of our features in "Researching" status may still be in the exploratory stages, and have no timeframe available. These are included in the roadmap only for early feedback. 
 
