@@ -14,9 +14,9 @@ The `camunda/issues` repository has two purposes:
 ## Guide to the roadmap
 Every item on the roadmap is [an issue](https://github.com/camunda/issues/issues), with a `label` that indicates each of the following:
 
-- A `feature area` that indicates the component of the product to which the item belongs. For a list of current public product components, see below.
+- A `feature area` that indicates the component of the product to which the item belongs. For a list of current public product components, [see below](https://github.com/camunda/issues#public-product-components).
 
-- A `potential release version`, which is set during the research phase as high level planning. The potential release version is subject to change as we refine the scope of the implementation.
+- A `potential release version`, which is set during the research phase as high-level planning. The potential release version is subject to change as we refine the scope of the implementation.
 
 - A `target release version`, indicating the version of the product in which we plan to deliver the feature. Camunda has minor releases twice a year, and alpha releases on a monthly basis. Once we know what version we are delivering a feature, we will update the issue to indicate that information. See our [release policy](https://camunda.com/release-policy/) for more information.
 
@@ -55,7 +55,7 @@ Ready for production use with associated SLA and technical support obligations.
 Anyone can participate in the issues repository to share feedback with Camunda or show support for specific features. 
 
 - *Show support for specific feature*: to show your interest, you can write a comment on an existing issue or simply give a thumb up :+1:
-- *Propose a feature*: Use the [issue template](https://github.com/camunda/issues/issues/new/choose) to propose a Feature Request. Before you do so, make sure to check the [component repository](https://github.com/camunda/issues#public-product-components) listed above to find out if the feature already exists.
+- *Propose a feature*: Use the [issue template](https://github.com/camunda/issues/issues/new/choose) to propose a Feature Request. Before you do so, please check the [component repository](https://github.com/camunda/issues#public-product-components) listed above to find out if the feature already exists.
 - *Report a bug*: Use the issue template to file a Bug Report. Before you do so, make sure to check the component repository (listed above) to find out if the bug has already been reported; and open the bug in the appropriate repository whenever possible.
 - *Change to the documentation*: Do you have suggestions to improve the documentation? Please write us in our dedicated repository, [camunda-platform-docs](https://github.com/camunda/camunda-platform-docs/), and we will make sure to follow up with you.
 
