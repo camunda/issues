@@ -7,7 +7,7 @@
 
 The `camunda/issues` repository has two purposes:
 
-1. **Communicating our [product roadmap](https://github.com/orgs/camunda/projects/57)**: this is where you can learn about what features we're working on, what stage they're in, and when we expect to bring them to you. Have any questions or comments about items on the roadmap? Share your feedback by leaving a comment on the issue you are interested in.
+1. **Communicating our [product roadmap](https://github.com/orgs/camunda/projects/57)**: this is where you can learn about what features we're working on, what stage they're in, and when we expect to release them. Do you have any questions or comments about features on the roadmap? Share your feedback by leaving a comment on the issue you are interested in.
 
 2. **Giving you a voice**: If you have a bug to report or a suggestion to propose, then (a) visit the respective [component repository](https://github.com/camunda/issues#public-product-components) listed below and open an issue there or (b) if there is no public repository, [open the issue here](https://github.com/camunda/issues/issues/new/choose).
 
