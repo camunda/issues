@@ -14,29 +14,29 @@ The `camunda/issues` repository has two purposes:
 ## Guide to the roadmap
 Every item on the roadmap is [an issue](https://github.com/camunda/issues/issues), with a `label` that indicates each of the following:
 
-- A `feature area` that indicates the component of the product to which the item belongs. For a list of current public product components, [see below](https://github.com/camunda/issues#public-product-components).
+- A [`component:xyz`](https://github.com/camunda/issues/labels?q=component) that indicates the component of the product to which the item belongs. For a list of current public product components, [see below](https://github.com/camunda/issues#public-product-components).
 
-- A `potential release version`, which is set during the research phase as high-level planning. The potential release version is subject to change as we refine the scope of the implementation.
+- A [`potential:xyz`](https://github.com/camunda/issues/labels?q=potential), which is set during the research phase as high-level planning. The potential release version is subject to change as we refine the scope of the implementation. 
 
-- `target:xyz`: this label indicates the version of the product in which we plan to deliver the feature. Camunda has minor releases twice a year, and alpha releases on a monthly basis. Once we know what version we are delivering a feature, we will update the issue to indicate that information. See our [release policy](https://camunda.com/release-policy/) for more information.
+- A [`target:xyz`](https://github.com/camunda/issues/labels?q=target+) that indicates the version of the product in which we plan to deliver the feature. Camunda has minor releases twice a year, and alpha releases on a monthly basis. Once we know what version we are delivering a feature, we will update the issue to indicate that information. See our [release policy](https://camunda.com/release-policy/) for more information.
 
-- `version:xyz`: once an epic is delivered, this label will be applied to the roadmap issue and the issue status will indicate if the feature was delivered in an alpha or minor version.
+- A [`version:xyz`](https://github.com/camunda/issues/labels?q=version+). Once an epic is delivered, this label will be applied to the roadmap issue and the issue status will indicate if the feature was delivered in an alpha or minor version.
 
 Some of our features in "Researching" status may still be in the exploratory stages, and have no timeframe available. These are included in the roadmap only for early feedback. 
 
 ### Roadmap phases
 The [roadmap](https://github.com/orgs/camunda/projects/57/views/1) is arranged on a project board to give a sense of how far out each item is on the horizon. Every product or feature is added to a particular project board column according to the development phase in which it is. Be sure to read the disclaimer below since the roadmap is subject to change, especially further out on the timeline. 
 
-#### Researching
+#### 1. Researching
 We are understanding the problem and researching solutions. In this phase, we are also looking for feedback from users to confirm our hypothesis.
 
-#### In Progress
+#### 2. In Progress
 At this stage, we have understood the problem and we are actively developing a solution.
 
-#### Alpha: Primarily for testing and feedback
+#### 3. Alpha: Primarily for testing and feedback
 Limited availability, requires pre-release agreement. Features still under development, and subject to change. Not recommended for production use, and limited documentation, SLAs or support provided.
 
-#### Minor: Generally available to all customers
+#### 4. Minor: Generally available to all customers
 Ready for production use with associated SLA and technical support obligations.
 
 ### Public Product Components
@@ -56,7 +56,7 @@ Anyone can participate in the issues repository to share feedback with Camunda o
 
 - *Show support for specific feature*: to show your interest, you can write a comment on an existing issue or simply give a thumb up :+1:
 - *Propose a feature*: Use the [issue template](https://github.com/camunda/issues/issues/new/choose) to propose a Feature Request. Before you do so, please check the [component repository](https://github.com/camunda/issues#public-product-components) listed above to find out if the feature already exists.
-- *Report a bug*: Use the issue template to file a Bug Report. Before you do so, make sure to check the component repository (listed above) to find out if the bug has already been reported; and open the bug in the appropriate repository whenever possible.
+- *Report a bug*: Use the issue template to file a Bug Report. Before you do so, make sure to check the component repository ([listed above](https://github.com/camunda/issues#public-product-components)) to find out if the bug has already been reported; and open the bug in the appropriate repository whenever possible.
 - *Change to the documentation*: Do you have suggestions to improve the documentation? Please write us in our dedicated repository, [camunda-platform-docs](https://github.com/camunda/camunda-platform-docs/), and we will make sure to follow up with you.
 
 ### Disclaimer
