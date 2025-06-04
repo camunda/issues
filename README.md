@@ -41,7 +41,7 @@ Ready for production use with associated SLA and technical support obligations.
 
 ### Public Product Components
 
-- [Zeebe](https://github.com/camunda/zeebe)
+- [Zeebe, Tasklist, Operate, Optimize, C8Run](https://github.com/camunda/camunda)
 - [Camunda Platform Helm](https://github.com/camunda/camunda-platform-helm)
 - [Connectors](https://github.com/camunda/connectors)
 - [Camunda Platform 8 Documentation](https://github.com/camunda/camunda-platform-docs)
