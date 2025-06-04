@@ -44,6 +44,7 @@ Ready for production use with associated SLA and technical support obligations.
 - [Zeebe, Tasklist, Operate, Optimize, Identity, C8Run](https://github.com/camunda/camunda)
 - [Camunda Platform Helm](https://github.com/camunda/camunda-platform-helm)
 - [Connectors](https://github.com/camunda/connectors)
+- [Camunda docker compose](https://github.com/camunda/camunda-distributions/tree/main)
 - [Camunda Platform 8 Documentation](https://github.com/camunda/camunda-platform-docs)
 - [Camunda Modeler](https://github.com/camunda/camunda-modeler)
 - [Camunda BPMN JS](https://github.com/camunda/camunda-bpmn-js)
