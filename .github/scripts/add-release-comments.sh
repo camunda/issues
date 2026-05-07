@@ -16,7 +16,12 @@ declare -A COMPONENT_PRODUCT=(
   ["component:camunda-hub"]="Hub"
 )
 
-CUTOFF_DATE=$(date -d "-${DAYS_BACK} days" --iso-8601)
+if [ "$(uname)" = "Darwin" ]; then
+  DATE_CMD=gdate
+else
+  DATE_CMD=date
+fi
+CUTOFF_DATE=$("$DATE_CMD" -d "-${DAYS_BACK} days" --iso-8601)
 echo "Looking for issues closed since: $CUTOFF_DATE"
 
 # GitHub search API does not reliably support OR across label: qualifiers,
@@ -34,12 +39,15 @@ for label in "${!COMPONENT_PRODUCT[@]}"; do
           | (.labels[].name | select(test("^[Vv]ersion:"))) as $v
           | "\($i.number)\t\($v)"' || true)
   if [ -n "$RESULT" ]; then
+    product="${COMPONENT_PRODUCT[$label]}"
     while IFS=$'\t' read -r num ver; do
       [ -z "$num" ] && continue
-      CANDIDATES="$CANDIDATES"$'\n'"$num"$'\t'"$ver"$'\t'"$label"
+      CANDIDATES="$CANDIDATES"$'\n'"$num"$'\t'"$ver"$'\t'"$product"
     done <<< "$RESULT"
   fi
 done
+# Dedupe by (issue, version, product) so issues carrying multiple component
+# labels that map to the same product are processed only once.
 CANDIDATES=$(echo "$CANDIDATES" | awk 'NF' | sort -u)
 
 if [ -z "$CANDIDATES" ]; then
@@ -49,14 +57,13 @@ fi
 
 echo "Candidate issues: $(echo "$CANDIDATES" | awk -F'\t' '{print $1}' | sort -u | tr '\n' ' ')"
 
-while IFS=$'\t' read -r ISSUE_NUMBER VERSION_LABEL COMPONENT_LABEL; do
+while IFS=$'\t' read -r ISSUE_NUMBER VERSION_LABEL PRODUCT; do
   [ -z "$ISSUE_NUMBER" ] && continue
   echo ""
   echo "Processing issue #$ISSUE_NUMBER..."
 
   VERSION="${VERSION_LABEL#version:}"
   VERSION="${VERSION#Version:}"
-  PRODUCT="${COMPONENT_PRODUCT[$COMPONENT_LABEL]}"
   MARKER="${COMMENT_MARKER_PREFIX}${VERSION}${COMMENT_MARKER_SUFFIX}"
 
   COMMENT_EXISTS=$(gh api "repos/$REPOSITORY/issues/$ISSUE_NUMBER/comments?per_page=100" \
