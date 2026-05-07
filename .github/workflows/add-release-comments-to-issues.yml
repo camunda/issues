@@ -36,7 +36,7 @@ on:
       days_back:
         description: 'Number of days back to look for closed issues (default: 10)'
         required: false
-        default: '10'
+        default: '21'
       dry_run:
         description: 'Dry run — only log what would be done, do not post comments'
         required: false
