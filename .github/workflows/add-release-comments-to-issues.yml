@@ -4,7 +4,7 @@
 #
 # This workflow scans recently closed issues and posts a release comment on those labeled with both:
 #   - a version:X label (e.g. version:8.7.0)
-#   - one of: component:webModeler, component:camunda-hub
+#   - one of: component:webModeler, component:web-modeler, component/web-modeler, component:camunda-hub
 #
 # Usage:
 #   - Scheduled weekly run (Wednesdays 09:00 UTC)
@@ -28,9 +28,9 @@
 name: Add Release Comments to Issues
 
 on:
-  schedule:
+  #schedule:
     # Run every Wednesday at 9:00 AM UTC
-    - cron: '0 9 * * 3'
+    # - cron: '0 9 * * 3'
   workflow_dispatch:
     inputs:
       days_back:
@@ -47,8 +47,8 @@ permissions: {}
 
 jobs:
   add-release-comments:
-    runs-on: ubuntu-latest
-    timeout-minutes: 15
+    runs-on: ubuntu-slim
+    timeout-minutes: 10
     permissions:
       issues: write
       contents: read
