@@ -35,7 +35,7 @@ on:
   workflow_dispatch:
     inputs:
       days_back:
-        description: 'Number of days back to look for closed issues (default: 10)'
+        description: 'Number of days back to look for closed issues (default: 21)'
         required: false
         default: '21'
       dry_run:
