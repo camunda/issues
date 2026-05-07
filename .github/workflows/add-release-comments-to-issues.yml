@@ -1,6 +1,7 @@
 # description: Adds release comments to closed issues labeled with version:X and a supported component
 # type: CI Helper
-# owner: camunda/web-modeler
+#
+# This is similar as https://github.com/camunda/camunda/blob/main/.github/workflows/add-release-comments-to-issues.yml
 #
 # This workflow scans recently closed issues and posts a release comment on those labeled with both:
 #   - a version:X label (e.g. version:8.7.0)
